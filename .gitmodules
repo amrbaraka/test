@@ -1,3 +1,6 @@
 [submodule "towards5gs-helm"]
 	path = towards5gs-helm
 	url = https://github.com/amrbaraka/towards5gs-helm.git
+[submodule "free5gc-on-minikube"]
+	path = free5gc-on-minikube
+	url = https://github.com/amrbaraka/towards5gs-helm.git
