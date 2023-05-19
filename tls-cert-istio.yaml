@@ -2,6 +2,7 @@ apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
  namespace: istio-system
+ name: xxx
 spec:
  secretName: tls-cert
  issuerRef:
