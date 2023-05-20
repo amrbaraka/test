@@ -2,9 +2,9 @@ apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
  namespace: istio-system
- name: xxx
+ name: tls-istio-cert
 spec:
- secretName: tls-cert
+ secretName: tls-istio-secret
  issuerRef:
    name: clusterissuer
    kind: ClusterIssuer
