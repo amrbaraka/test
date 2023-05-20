@@ -4,7 +4,7 @@ metadata:
  namespace: istio-system
  name: tls-istio-cert
 spec:
- secretName: tls-istio-secret
+ secretName: istio-tls-secret
  issuerRef:
    name: clusterissuer
    kind: ClusterIssuer
