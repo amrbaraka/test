@@ -1,6 +1,8 @@
 #!/bin/sh
 # Load variables from ConfigMap mounted file
+set -a 
 . /configs/vars.env
+set +a 
 echo $REPLICAS
 echo $IMAGE
 #Substitute the variables in app.template.yaml and output to app.yaml
