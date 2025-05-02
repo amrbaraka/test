@@ -6,15 +6,7 @@ spec:
   replicas: ${REPLICAS}
   selector:
     matchLabels:
-      app: my-app
-  ignoreDifferences:
-    - group: ""
-      kind: ConfigMap
-      name: app-variables-cm
-      namespace: default    
-  syncPolicy:
-    syncOptions:
-    - RespectIgnoreDifferences=true    
+      app: my-app  
   template:
     metadata:
       labels:
