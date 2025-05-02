@@ -7,6 +7,14 @@ spec:
   selector:
     matchLabels:
       app: my-app
+  ignoreDifferences:
+    - group: ""
+      kind: ConfigMap
+      name: app-variables-cm
+      namespace: default    
+  syncPolicy:
+    syncOptions:
+    - RespectIgnoreDifferences=true    
   template:
     metadata:
       labels:
